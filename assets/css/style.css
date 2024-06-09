@@ -1,0 +1,483 @@
+
+/* reset CSS */
+*{
+    padding: 0;
+    margin :0;
+    box-sizing: border-box;
+}
+/* 
+    1. From outside to inside.
+    2. From up to down.
+    3. Overview to detail.
+*/
+ /*
+    1. Place
+    2. Size (Width, height)
+    3. Color
+    4. Style (font, shape,... )
+ */
+ /* adding atribute we can frequently use */
+ .text-white{
+    color: #fff !important;
+ }
+ html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+  
+ }
+ .row{
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.row1{
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+}
+.col{
+ padding: 0px 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;    
+}
+#main{
+
+}
+
+#header{
+    height:40px ;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1;
+}
+.header_navbar {
+
+}
+/* attribute Nav */
+
+#nav {
+
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav > li > a{
+    color:white;
+    text-transform : uppercase;
+    font-size: 12px;
+    font-weight:100;
+}
+#nav {
+    display: inline-block;
+    scroll-behavior: smooth;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 24px;
+    display: block ;
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#nav .subnav a:hover,
+#nav > li:hover > a {
+    color:#000;
+    background-color:#ccc;
+}
+
+#nav li:hover .subnav {
+   display: block;   
+}
+
+#nav .subnav a {
+    color:#000;
+}
+#nav .subnav{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3) ;
+    display: none;
+    min-width: 160px; 
+    overflow: hidden; 
+    list-style-type: none;
+}
+
+#nav .subnav li a {
+    padding: 0px 18px;
+    line-height: 38px;
+    position: relative;
+}
+.nav-list__mobile{
+    display: none ;
+}
+
+/* header */
+#header .menu-btn{
+    position: absolute ;
+    top:0;
+    right:0;    
+    display: none;
+}
+#header .menu-btn,
+#header .search-btn{
+    float:right;
+    line-height: 40px; 
+    padding: 0px 21px;
+    }
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336; 
+}
+#header .menu-btn:hover{
+    background-color: #ccc;
+}
+#header .menu-btn:hover .menu-icon{
+    color: #000;
+}
+#header .menu-icon,
+#header .search{
+    color:white;
+    font-size:16px;    
+}
+/* slider */
+#slider{
+    position: relative;
+   margin-top: 40px;
+  /*  percent value relative with width itself */
+   padding-top: 50%; 
+   background: url('../img/slider1.jpg')  top center/ cover no-repeat;
+
+}
+#slider .text-content {
+    position: absolute;
+    bottom:47px;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description {
+    font-size: 15px;
+    margin-top:25px
+}
+/* Content */
+#content{
+}
+#content .content-section{
+    width: 800px; 
+    max-width: 100%;
+    padding:64px 0 96px;
+    margin-left:auto;
+    margin-right:auto; 
+    padding-left:16px;
+    padding-right:16px;
+}
+#content .section-heading{
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        text-align: center;
+}
+#content .text-about{
+        margin-top: 25px;
+        text-align: justify;
+        line-height: 1.4;
+}
+#content .section-sub-heading{
+        font-size: 15px;
+        margin-top: 25px;
+        text-align: center;
+        font-style: italic;
+        opacity: 0.6;
+}
+#content .member-list {
+    display: flex;
+    padding-top: 48px;
+    text-align: center;
+
+}
+
+#content .member-item{ 
+    width: 33.33333%;
+}
+
+#content .member-name{
+    font-size: 15px;
+
+}
+#content .member-item img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Tour  */
+.tour-section{
+    background-color: #000;
+}
+.ticket-list{
+    margin-top:40px;
+    background-color: #fff;
+}
+.ticket-list li{
+    list-style-type: none;
+    color: #757575;
+    padding: 11px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.ticket-list .sold-out{
+    font-size: 15px;
+    background-color:#f44336;
+    padding:3px 4px;
+    color: #fff;
+    margin-left: 16px;
+}
+.ticket-list .quantity{
+    float:right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top:-3px;
+}
+
+/* places */
+.place-list{
+    margin-top:32px;
+    margin-bottom: 16px;
+    padding:0;
+}
+
+.place-item{
+   width:33.3333%;
+   padding:0 8px;
+}
+.place-body{
+    background-color: #fff;
+    padding:16px;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time{
+    margin: 15px 0px;
+    color: #757575;
+}
+.place-image:hover{
+   opacity: 0.6;
+}
+.place-image{
+    width:100%;
+    display: block;
+}
+
+.place-desc{
+    line-height: 1.4;
+}
+
+.place-buy{
+    color:#fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.place-buy:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.place-list .clear{
+
+}
+
+/* contact */
+
+.contact-container{
+    margin-top: 48px;
+}
+.content-detail i[class*="ti-"] {
+    width:  30px;
+    display: inline-flex;
+}
+.content-form{
+    font-size: 18px;
+}
+.content-detail{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.content-form .form-control{
+    width: 100%;
+    padding:10px;
+    border: 1px solid #ccc;
+}
+.form-submit{
+    font-size: 15px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding:10px 16px;
+    float: right;
+    cursor: pointer;
+}
+.form-submit:hover{
+    color: #000;
+    background-color:#ccc ;
+}
+/* map */
+
+.map-section img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+/* footer */
+#footer .socials-lists{
+    text-align: center;
+    font-size: 24px;
+}
+#footer .socials-lists a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+#footer .socials-lists a:hover{
+    color:rgba(0,0,0,0.3)
+}
+#footer .copyrights {
+    text-align: center;
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+    margin-top: 15px;
+}
+#footer .copyrights a{
+    color: rgba(0,0,0,0.6);
+}
+#footer{
+    padding: 64px 16px;
+}
+/* MODAL */   
+
+
+.Modal{
+    position: fixed;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display:none;           
+    align-items: center;
+    justify-content: center;
+}
+.open{
+    display: flex;
+}
+.Modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+.Modal-header i {
+    margin-right: 16px;
+}
+.Modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFade ease .5s;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top:0;
+    color: #FFF;
+    padding: 15px 18px;
+    opacity: 0.8;
+}
+.modal-close:hover{
+    cursor: pointer;
+    color :#000;
+    background-color: #ccc;
+}
+.Modal-body {
+    padding: 16px;
+}
+label.model-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom:12px;
+}
+input.modal-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 3px solid #ccc;
+    margin-bottom: 24px;
+}
+button#pay:hover {
+    background-color: #ccc;
+    color: #000;
+}
+button#pay {
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+footer.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+#nav-input__mobile {
+    display: none ;
+} 
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
