@@ -1,0 +1,443 @@
+/* reset html */
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-image: url('/flask/template/assets/img/ipg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* .img-background{
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* or 100% 100% if you want to stretch the image */ 
+.explore_btn{
+    background-color: #663399;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block; /* Thay đổi thành inline-block */
+    margin-top: 20px; /* Thêm margin-top */
+    z-index: 2;
+
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0.5;
+}
+/* sign up site */
+
+.board {
+    position: fixed;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 4;
+}
+
+.hidden {
+    display: none;
+}
+
+.form{
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* padding: 20px; */
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+}
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 50;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px
+}
+
+nav li {
+    margin: 0px 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem; /* Điều chỉnh kích thước font chữ */
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.location-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* width: 0px; */
+    height: 64px;
+    margin-top: 10px;
+
+}
+
+.location-btn:hover {
+    color: #ccc;
+}
+.title_header {
+    position: relative;
+    z-index: 2;
+}
+.title_header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.title_header p {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.play-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative; /* Add this line if not already positioned */
+    z-index: 3;
+    transition: color 0.3s ease;
+}
+
+.play-btn:hover {
+    color: rgb(250, 95, 11);
+}
+
+/* Explore Section Styles */
+.explore-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.explore-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.explore-section p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.destination {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.destination img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destination:hover img {
+    transform: scale(1.1);
+}
+
+.destination h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.destination p {
+    margin: 0;
+    color: #777;
+}
+
+.see-more-btn {
+    background-color: #c74a18;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block; /* Thay đổi thành inline-block */
+    margin-top: 20px; /* Thêm margin-top */
+    transition:  0.3s ease;
+}
+
+.see-more-btn:hover{
+    background-color: #ff4400;
+}
+/* Journal Section Styles */
+.journal-section {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.journal-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.journal-section p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.journal-entries {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.entry {
+    width: calc(50% - 15px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.entry img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.entry:hover img {
+    transform: scale(1.1);
+}
+
+.entry-content {
+    padding: 20px;
+}
+
+.date {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.entry h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.entry p {
+    margin: 0 0 15px;
+    line-height: 1.5;
+}
+
+.read-more {
+    color: #663399;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.see-posts-btn {
+    background-color: #c74a18;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition:  0.3s ease;
+}
+.see-posts-btn:hover {
+    background-color: #ff4400;
+}
+div.a {
+	text-align: center;
+}
+/*  line */
+
+.footer-line {
+    border-top: 5px solid #ff4400; /* change color as needed */
+}
+/*  footer */
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-right {
+    flex: 1;
+    margin-left: 20px;
+}
+/* calsera */
+/* 
+.carousel {
+    position: relative;
+  }
+  
+  .carousel-item {
+    display: none;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    }   
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+    color: black;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+    color: black;
+  }
+  .carousel-indicators {
+    display: none;
+} */
